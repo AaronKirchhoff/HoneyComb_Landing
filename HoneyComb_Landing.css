@@ -1,0 +1,41 @@
+body {
+background: url(../HoneyComb_Pictures/honeytable.jpg) no-repeat center center fixed;
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.wrapper {
+  background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+  background-color: #db6f02;
+  position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+/* honey colors, 
+  #8e4200
+  #db6f02	
+  #ff9624	
+  #ffb825	
+  #ffd69c */
+
+#title {
+  width: 200px;
+  background-color: black;
+  padding: 5px 5px 5px 30px;
+  margin-left: 5px;
+  display: block;
+  color: #8e4200;
+}
