@@ -49,11 +49,12 @@ background: url(../HoneyComb_Pictures/honeytable.jpg) no-repeat center center fi
 
 /* honey comb hexagon grid css */
 .honeyCombContainer {
-  margin-top: 350px;
-  margin-left: 200px;
-  --s: 175px; /* control the size */
+  margin-top: 200px;
+  margin-left: 180px;
+  --s: 150px; /* control the size */
   --g: 10px;  /* control the gap */
   display: grid;
+  /* leave note 9/2/22 center hexagon is a div that runs across the page, need to let text below share space */
   /* margin: calc(var(--s) + var(--g)); */
 }
 
@@ -98,11 +99,29 @@ background: url(../HoneyComb_Pictures/honeytable.jpg) no-repeat center center fi
 
 
 .mainTitle {
-  width: 400px;
+  /* width: 600px; */
   color: white;
   /* display: inline-block; */
-  float: right;
+  /* float: right; */
   /* position: absolute; */
-  top: 0;
+  /* top: 0; */
+  margin-top: 150px;
+  /* margin-right: 200px; */
+  font-size: 300%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+}
+
+.PageTextDiv{
+float: right;
+}
+
+.mainText {
+  width: 250px;
+  color: white;
+  /* float: right; */
+  display: inline-block
 }
