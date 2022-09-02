@@ -31,23 +31,30 @@ background: url(../HoneyComb_Pictures/honeytable.jpg) no-repeat center center fi
   #ffb825	
   #ffd69c */
 
-#title {
+.title {
   width: 200px;
   background-color: black;
   padding: 5px 5px 5px 30px;
   margin-left: 5px;
-  display: block;
+  display: inline-block;
   color: #8e4200;
+}
+
+.menuOptions {
+  display: inline-block;
+  padding: 5px 5px 5px 30px;
+
 }
 
 
 /* honey comb hexagon grid css */
 .honeyCombContainer {
-  margin-top: 350px;
-  margin-left: 200px;
-  --s: 175px; /* control the size */
+  margin-top: 200px;
+  margin-left: 180px;
+  --s: 150px; /* control the size */
   --g: 10px;  /* control the gap */
   display: grid;
+  /* leave note 9/2/22 center hexagon is a div that runs across the page, need to let text below share space */
   /* margin: calc(var(--s) + var(--g)); */
 }
 
@@ -91,17 +98,30 @@ background: url(../HoneyComb_Pictures/honeytable.jpg) no-repeat center center fi
 .honeyCombContainer > img:nth-child(11) {--_y: calc( 50% + .5*var(--g))}
 
 
+.mainTitle {
+  /* width: 600px; */
+  color: white;
+  /* display: inline-block; */
+  /* float: right; */
+  /* position: absolute; */
+  /* top: 0; */
+  margin-top: 150px;
+  /* margin-right: 200px; */
+  font-size: 300%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+}
 
+.PageTextDiv{
+float: right;
+}
 
-
-
-
-
-/* body {
-  margin: 0;
-  min-height: 100vh;
-  display: grid;
-  place-content: center;
-  background: #aabbfb;
-} */
+.mainText {
+  width: 250px;
+  color: white;
+  /* float: right; */
+  display: inline-block
+}
