@@ -7,7 +7,7 @@ background: url(../HoneyComb_Pictures/honeytable.jpg) no-repeat center center fi
 }
 
 .wrapper {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     top: 0;
     left: 0;
@@ -24,6 +24,11 @@ background: url(../HoneyComb_Pictures/honeytable.jpg) no-repeat center center fi
     width: 100%;
 }
 
+.header i {
+  color: black;
+  padding-left: 35px;
+  padding-right:  5px;
+}
 /* honey colors, 
   #8e4200
   #db6f02	
@@ -116,12 +121,16 @@ background: url(../HoneyComb_Pictures/honeytable.jpg) no-repeat center center fi
 }
 
 .PageTextDiv{
+width: 700px;
 float: right;
+margin-right: 100px;
 }
 
 .mainText {
-  width: 250px;
+  width: 300px;
   color: white;
   /* float: right; */
-  display: inline-block
+  display: inline-block;
+  padding: 8px;
+  vertical-align: top;
 }
