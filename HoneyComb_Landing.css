@@ -1,10 +1,14 @@
 body {
-background: url(../HoneyComb_Pictures/honeytable.jpg) no-repeat center center fixed;
+background: url(../HoneyComb_Pictures/honeytableflip.jpg) no-repeat center center fixed;
 -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
+
+/* html body {
+  height: 100%;
+} */
 
 .wrapper {
   background-color: rgba(0, 0, 0, 0.5);
@@ -27,7 +31,7 @@ background: url(../HoneyComb_Pictures/honeytable.jpg) no-repeat center center fi
 .header i {
   color: black;
   padding-left: 35px;
-  padding-right:  5px;
+  padding-right: 5px;
 }
 /* honey colors, 
   #8e4200
@@ -54,9 +58,9 @@ background: url(../HoneyComb_Pictures/honeytable.jpg) no-repeat center center fi
 
 /* honey comb hexagon grid css */
 .honeyCombContainer {
-  margin-top: 200px;
+  margin-top: 160px;
   margin-left: 180px;
-  --s: 150px; /* control the size */
+  --s: 170px; /* control the size */
   --g: 10px;  /* control the gap */
   display: grid;
   /* leave note 9/2/22 center hexagon is a div that runs across the page, need to let text below share space */
@@ -106,31 +110,69 @@ background: url(../HoneyComb_Pictures/honeytable.jpg) no-repeat center center fi
 .mainTitle {
   /* width: 600px; */
   color: white;
-  /* display: inline-block; */
+  display: inline-block;
   /* float: right; */
   /* position: absolute; */
   /* top: 0; */
   margin-top: 150px;
+  margin-left: 200px;
   /* margin-right: 200px; */
   font-size: 300%;
-  text-align: center;
+  /* text-align: center;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 
 }
 
-.PageTextDiv{
-width: 700px;
+.PageTextDivWrapper{
+width: 600px;
+height: 100vh;
 float: right;
-margin-right: 100px;
+background-color: #ffd69c;
+/* padding-top: 200px; */
+/* margin-right: 100px; */
+/* justify-content: center; */
+}
+
+.PageTextDiv {
+  margin-top: 200px;
 }
 
 .mainText {
-  width: 300px;
+  width: 550px;
   color: white;
   /* float: right; */
-  display: inline-block;
+  display: block;
   padding: 8px;
-  vertical-align: top;
+  /* vertical-align: top; */
+  text-align: center;
 }
+
+.mainText h1 {
+  /* not working */
+  color: #db6f02 !important;
+}
+
+.mainButton {
+  margin-left: 250px;
+
+  /* leave note, how to center this button? */
+  /* text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; */
+
+  background-color: #ffb825;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+}
+
