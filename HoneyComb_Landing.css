@@ -4,6 +4,7 @@ background: url(../HoneyComb_Pictures/honeytableflip.jpg) no-repeat center cente
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  min-height: 100%;
 }
 
 /* html body {
@@ -11,27 +12,30 @@ background: url(../HoneyComb_Pictures/honeytableflip.jpg) no-repeat center cente
 } */
 
 .wrapper {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.502);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    
 }
 
 .header {
-  background-color: #db6f02;
+  background-color: #f5f5f5;
   position: fixed;
     top: 0;
     left: 0;
     z-index: 999;
     width: 100%;
+    height: 120px;
 }
 
 .header i {
   color: black;
   padding-left: 35px;
   padding-right: 5px;
+
 }
 /* honey colors, 
   #8e4200
@@ -40,27 +44,77 @@ background: url(../HoneyComb_Pictures/honeytableflip.jpg) no-repeat center cente
   #ffb825	
   #ffd69c */
 
-.title {
+  #color1 {
+    background-color: white;
+    color: #8e4200;
+    display: inline-block;
+    font-size: x-large;
+    font-weight: bold;
+
+  }
+  #color2 {
+    background-color: white;
+    color: #db6f02;
+    display: inline-block;
+    font-size: x-large;
+    font-weight: bold;
+
+
+
+  }
+  #color3 {
+    background-color: white;
+    color: #ff9624;
+    display: inline-block;
+    font-size: x-large;
+    font-weight: bold;
+
+
+
+  }
+  #color4 {
+    background-color: white;
+    color: #ffb825;
+    display: inline-block;
+    font-size: x-large;
+    font-weight: bold;
+
+
+
+  }
+  #color5 {
+    background-color: white;
+    color: #ffd69c;
+    display: inline-block;
+    font-size: x-large;
+    font-weight: bold;
+
+
+  }
+
+/* .title {
   width: 200px;
   background-color: black;
   padding: 5px 5px 5px 30px;
   margin-left: 5px;
   display: inline-block;
   color: #8e4200;
-}
+} */
 
 .menuOptions {
   display: inline-block;
-  padding: 5px 5px 5px 30px;
+  padding: 33px 5px 5px 30px;
+  font-family: "Josefin Sans", sans-serif;
+
 
 }
 
 
 /* honey comb hexagon grid css */
 .honeyCombContainer {
-  margin-top: 160px;
+  margin-top: 110px;
   margin-left: 180px;
-  --s: 170px; /* control the size */
+  --s: 140px; /* control the size */
   --g: 10px;  /* control the gap */
   display: grid;
   /* leave note 9/2/22 center hexagon is a div that runs across the page, need to let text below share space */
@@ -75,11 +129,11 @@ background: url(../HoneyComb_Pictures/honeytableflip.jpg) no-repeat center cente
   clip-path: polygon(25% 0%, 75% 0%, 100% 50%,75% 100%,25% 100%,0 50%);
   transform: translate(var(--_x,0),var(--_y,0)) scale(var(--_t,1));
   cursor: pointer;
-  filter: grayscale(80%);
+  filter: grayscale(0);
   transition: .2s linear;
 }
 .honeyCombContainer > img:hover {
-  filter: grayscale(0);
+  filter: grayscale(80%);
   z-index: 1;
   --_t: 1.2;
 }
@@ -108,20 +162,13 @@ background: url(../HoneyComb_Pictures/honeytableflip.jpg) no-repeat center cente
 
 
 .mainTitle {
-  /* width: 600px; */
-  color: white;
+  color: #ff9624;
   display: inline-block;
-  /* float: right; */
-  /* position: absolute; */
-  /* top: 0; */
-  margin-top: 150px;
+  margin-top: 130px;
   margin-left: 200px;
-  /* margin-right: 200px; */
-  font-size: 300%;
-  /* text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center; */
+  font-size: 400%;
+  font-family: "Sofia", sans-serif;
+
 
 }
 
@@ -137,42 +184,65 @@ background-color: #ffd69c;
 
 .PageTextDiv {
   margin-top: 200px;
+  text-align: center;
+  width: 600px;
+  
 }
 
 .mainText {
   width: 550px;
+  margin: auto;
+  margin-bottom: 25px;
   color: white;
-  /* float: right; */
   display: block;
-  padding: 8px;
-  /* vertical-align: top; */
+  padding: 3px;
+  font-family: "Josefin Sans", sans-serif;
+
+}
+
+.mainTextHead {
+  width: 500px;
+  margin: auto;
+  color: #8e4200;
+  text-shadow: 2px 2px #db6f02;
+
+  display: block;
+  margin-bottom: 25px;
+  padding: 3px;
   text-align: center;
+  font-size: 350%;
+  font-family: "Cardo", sans-serif;
+
 }
+/* .mainText h3 {
+  color: #db6f02;
+  font-family: "Cardo", sans-serif;
 
-.mainText h1 {
-  /* not working */
-  color: #db6f02 !important;
-}
+} */
 
-.mainButton {
-  margin-left: 250px;
-
-  /* leave note, how to center this button? */
-  /* text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center; */
-
-  background-color: #ffb825;
+#button {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #8e4200;
   border: none;
   color: white;
   padding: 15px 32px;
-  text-align: center;
   text-decoration: none;
-  display: inline;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+}
 
+button {
+  background-color: #ffb825 !important;
+
+}
+
+.footer {
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin-top: 165px;
+  position: absolute;
+  background-color: ivory;
 }
 
