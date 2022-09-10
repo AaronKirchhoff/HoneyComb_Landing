@@ -1,5 +1,5 @@
 body {
-background: url(../HoneyComb_Pictures/honeytableflip.jpg) no-repeat center center fixed;
+background: url(../HoneyComb_Pictures/honeytable.jpg) no-repeat center center fixed;
 -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -12,7 +12,7 @@ background: url(../HoneyComb_Pictures/honeytableflip.jpg) no-repeat center cente
 } */
 
 .wrapper {
-  background-color: rgba(0, 0, 0, 0.502);
+  /* background-color: rgba(0, 0, 0, 0.502); */
     position: absolute;
     top: 0;
     left: 0;
@@ -22,7 +22,7 @@ background: url(../HoneyComb_Pictures/honeytableflip.jpg) no-repeat center cente
 }
 
 .header {
-  background-color: #f5f5f5;
+  background-color: white;
   position: fixed;
     top: 0;
     left: 0;
@@ -43,6 +43,14 @@ background: url(../HoneyComb_Pictures/honeytableflip.jpg) no-repeat center cente
   #ff9624	
   #ffb825	
   #ffd69c */
+
+  #Bee-Logo {
+    height: 100px;
+    width: 160px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 8px;
+  }
 
   #color1 {
     background-color: white;
@@ -112,9 +120,9 @@ background: url(../HoneyComb_Pictures/honeytableflip.jpg) no-repeat center cente
 
 /* honey comb hexagon grid css */
 .honeyCombContainer {
-  margin-top: 110px;
-  margin-left: 180px;
-  --s: 140px; /* control the size */
+  margin-top: 348px;
+  margin-left: 120px;
+  --s: 150px; /* control the size */
   --g: 10px;  /* control the gap */
   display: grid;
   /* leave note 9/2/22 center hexagon is a div that runs across the page, need to let text below share space */
@@ -168,15 +176,28 @@ background: url(../HoneyComb_Pictures/honeytableflip.jpg) no-repeat center cente
   margin-left: 200px;
   font-size: 400%;
   font-family: "Sofia", sans-serif;
+}
+
+.mainTitle1 {
+float: right;
+/* padding-top: 23px; */
+font-family: "Sofia", sans-serif;
+font-size: 400%;
+margin: auto;
+padding-right: 20px;
+text-shadow: 2px 2px #db6f02;
 
 
 }
+
 
 .PageTextDivWrapper{
 width: 600px;
 height: 100vh;
 float: right;
-background-color: #ffd69c;
+background-color: rgba(255, 214, 156, 0.8);
+/* opacity: 0.5; */
+
 /* padding-top: 200px; */
 /* margin-right: 100px; */
 /* justify-content: center; */
@@ -203,10 +224,8 @@ background-color: #ffd69c;
 .mainTextHead {
   width: 500px;
   margin: auto;
-  color: #8e4200;
-  text-shadow: 2px 2px #db6f02;
-
   display: block;
+  color: white;
   margin-bottom: 25px;
   padding: 3px;
   text-align: center;
